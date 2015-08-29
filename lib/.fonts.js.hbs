@@ -21,6 +21,9 @@ function _read(filename) {
 exports.{{theme}} = function {{theme}}() {
     return _read('{{filename}}');
 };
+exports.{{theme}}.$src = '{{filename}}';
+exports.{{theme}}.$type = '{{type}}';
+
 
 {{/each}}
 

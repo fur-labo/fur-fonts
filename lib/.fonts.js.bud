@@ -22,12 +22,13 @@ module.exports = {
                 var theme = _themeName(i);
                 return {
                     theme: theme,
-                    filename: filename
+                    filename: filename,
+                    type: path.extname(filename).replace(/^\./, '')
                 }
             });
         }
     }
-}
+};
 
 
 if (!module.parent) {
