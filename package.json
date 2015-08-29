@@ -1,6 +1,6 @@
 {
   "name": "fur-fonts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fonts for fur.",
   "main": "lib",
   "scripts": {
@@ -18,7 +18,8 @@
     "url": "http://okunishitaka.com"
   },
   "keywords": [
-    "fur"
+    "fur",
+    "fonts"
   ],
   "license": "MIT",
   "bugs": {

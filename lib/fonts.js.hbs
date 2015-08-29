@@ -1,0 +1,26 @@
+/**
+ * Font data module.
+ * @module fur-fonts/lib/fonts
+ */
+
+var path = require('path'),
+    fs = require('fs');
+
+var assetsDir = path.resolve(__dirname, '../assets');
+
+function _read(filename) {
+    return fs.readFileSync(path.resolve(assetsDir, filename));
+}
+
+
+{{#each themes}}
+/**
+ * @function {{theme}}
+ * @retusn {buffer} - data for theme "{{theme}}".
+ */
+exports.{{theme}} = function {{theme}}() {
+    return _read('{{filename}}');
+};
+
+{{/each}}
+
