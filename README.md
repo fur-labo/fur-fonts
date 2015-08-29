@@ -80,6 +80,8 @@ console.log(fontB);
 Examples
 --------
 
+See [fur-fonts-gallery](http://fur-repo.github.io/fur-fonts/)
+
 | Theme | Image |
 | :---: | ----- |
 | **a** | <img src="./docs/examples/images/example-font-a.png?v=1.0.4" height="72"> |
@@ -221,6 +223,7 @@ Links
 ------
 
 + [fur](https://github.com/fur-repo/fur)
++ [fur-fonts-gallery](http://fur-repo.github.io/fur-fonts/)
 + [opensourcedesign](https://github.com/opensourcedesign/fonts)
 
 <!-- Links End -->
