@@ -20,7 +20,7 @@ var path = require('path'),
     furFonts = require('../lib');
 
 var basedir = path.resolve(__dirname, '..'),
-    exampleImageDir = path.resolve(basedir, 'docs/example/images');
+    exampleImageDir = path.resolve(basedir, 'docs/examples/images');
 
 mkdirp.sync(exampleImageDir);
 
