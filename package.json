@@ -1,6 +1,6 @@
 {
   "name": "fur-fonts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fonts for fur.",
   "main": "lib",
   "scripts": {
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "argx": "^1.1.6",
-    "stringcase": "^1.2.5"
+    "stringcase": "^1.2.5",
+    "writexml": "^1.1.0"
   }
 }
