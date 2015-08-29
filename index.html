@@ -1,0 +1,4689 @@
+<!DOCTYPE html>
+<html ng:app="FontThemeApp" ng:controller="FontThemCtrl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>fur-fonts</title>
+    <link rel="stylesheet" href="./assets/stylesheets/gallery.css"/>
+    <link rel="icon" href="./assets/images/fur-favicon.png"/>
+    <style>
+                    @font-face {
+                font-family: a  ;
+                src: url('assets/fonts/Alef-Bold.ttf')
+            }
+
+            .font-a{
+                font-family: a, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: b  ;
+                src: url('assets/fonts/Alef-Regular.ttf')
+            }
+
+            .font-b{
+                font-family: b, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: c  ;
+                src: url('assets/fonts/Anonymous Pro B.ttf')
+            }
+
+            .font-c{
+                font-family: c, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: d  ;
+                src: url('assets/fonts/Anonymous Pro BI.ttf')
+            }
+
+            .font-d{
+                font-family: d, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: e  ;
+                src: url('assets/fonts/Anonymous Pro I.ttf')
+            }
+
+            .font-e{
+                font-family: e, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: f  ;
+                src: url('assets/fonts/Anonymous Pro Minus B.ttf')
+            }
+
+            .font-f{
+                font-family: f, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: g  ;
+                src: url('assets/fonts/Anonymous Pro Minus BI.ttf')
+            }
+
+            .font-g{
+                font-family: g, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: h  ;
+                src: url('assets/fonts/Anonymous Pro Minus I.ttf')
+            }
+
+            .font-h{
+                font-family: h, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: i  ;
+                src: url('assets/fonts/Anonymous Pro Minus.ttf')
+            }
+
+            .font-i{
+                font-family: i, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: j  ;
+                src: url('assets/fonts/Anonymous Pro.ttf')
+            }
+
+            .font-j{
+                font-family: j, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: k  ;
+                src: url('assets/fonts/Cantarell-Bold.ttf')
+            }
+
+            .font-k{
+                font-family: k, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: l  ;
+                src: url('assets/fonts/Cantarell-BoldOblique.ttf')
+            }
+
+            .font-l{
+                font-family: l, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: m  ;
+                src: url('assets/fonts/Cantarell-Oblique.ttf')
+            }
+
+            .font-m{
+                font-family: m, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: n  ;
+                src: url('assets/fonts/Cantarell-Regular.ttf')
+            }
+
+            .font-n{
+                font-family: n, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: o  ;
+                src: url('assets/fonts/Comfortaa-Bold.ttf')
+            }
+
+            .font-o{
+                font-family: o, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: p  ;
+                src: url('assets/fonts/Comfortaa-Light.ttf')
+            }
+
+            .font-p{
+                font-family: p, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: q  ;
+                src: url('assets/fonts/Comfortaa-Regular.ttf')
+            }
+
+            .font-q{
+                font-family: q, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: r  ;
+                src: url('assets/fonts/ComicNeue-Angular-Bold-Oblique.ttf')
+            }
+
+            .font-r{
+                font-family: r, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: s  ;
+                src: url('assets/fonts/ComicNeue-Angular-Bold.ttf')
+            }
+
+            .font-s{
+                font-family: s, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: t  ;
+                src: url('assets/fonts/ComicNeue-Angular-Light-Oblique.ttf')
+            }
+
+            .font-t{
+                font-family: t, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: u  ;
+                src: url('assets/fonts/ComicNeue-Angular-Light.ttf')
+            }
+
+            .font-u{
+                font-family: u, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: v  ;
+                src: url('assets/fonts/ComicNeue-Angular-Regular-Oblique.ttf')
+            }
+
+            .font-v{
+                font-family: v, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: w  ;
+                src: url('assets/fonts/ComicNeue-Angular-Regular.ttf')
+            }
+
+            .font-w{
+                font-family: w, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: x  ;
+                src: url('assets/fonts/ComicNeue-Bold-Oblique.ttf')
+            }
+
+            .font-x{
+                font-family: x, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: y  ;
+                src: url('assets/fonts/ComicNeue-Bold.ttf')
+            }
+
+            .font-y{
+                font-family: y, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: z  ;
+                src: url('assets/fonts/ComicNeue-Light-Oblique.ttf')
+            }
+
+            .font-z{
+                font-family: z, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: aa  ;
+                src: url('assets/fonts/ComicNeue-Light.ttf')
+            }
+
+            .font-aa{
+                font-family: aa, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ab  ;
+                src: url('assets/fonts/ComicNeue-Regular-Oblique.ttf')
+            }
+
+            .font-ab{
+                font-family: ab, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ac  ;
+                src: url('assets/fonts/ComicNeue-Regular.ttf')
+            }
+
+            .font-ac{
+                font-family: ac, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ad  ;
+                src: url('assets/fonts/Dosis-Bold.ttf')
+            }
+
+            .font-ad{
+                font-family: ad, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ae  ;
+                src: url('assets/fonts/Dosis-Book.ttf')
+            }
+
+            .font-ae{
+                font-family: ae, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: af  ;
+                src: url('assets/fonts/Dosis-ExtraBold.ttf')
+            }
+
+            .font-af{
+                font-family: af, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ag  ;
+                src: url('assets/fonts/Dosis-ExtraLight.ttf')
+            }
+
+            .font-ag{
+                font-family: ag, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ah  ;
+                src: url('assets/fonts/Dosis-Light.ttf')
+            }
+
+            .font-ah{
+                font-family: ah, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ai  ;
+                src: url('assets/fonts/Dosis-Medium.ttf')
+            }
+
+            .font-ai{
+                font-family: ai, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: aj  ;
+                src: url('assets/fonts/Dosis-SemiBold.ttf')
+            }
+
+            .font-aj{
+                font-family: aj, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ak  ;
+                src: url('assets/fonts/EkMukta-Bold.ttf')
+            }
+
+            .font-ak{
+                font-family: ak, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: al  ;
+                src: url('assets/fonts/EkMukta-ExtraBold.ttf')
+            }
+
+            .font-al{
+                font-family: al, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: am  ;
+                src: url('assets/fonts/EkMukta-ExtraLight.ttf')
+            }
+
+            .font-am{
+                font-family: am, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: an  ;
+                src: url('assets/fonts/EkMukta-Light.ttf')
+            }
+
+            .font-an{
+                font-family: an, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ao  ;
+                src: url('assets/fonts/EkMukta-Medium.ttf')
+            }
+
+            .font-ao{
+                font-family: ao, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ap  ;
+                src: url('assets/fonts/EkMukta-Regular.ttf')
+            }
+
+            .font-ap{
+                font-family: ap, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: aq  ;
+                src: url('assets/fonts/EkMukta-SemiBold.ttf')
+            }
+
+            .font-aq{
+                font-family: aq, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ar  ;
+                src: url('assets/fonts/FreeMono.ttf')
+            }
+
+            .font-ar{
+                font-family: ar, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: as  ;
+                src: url('assets/fonts/FreeMonoBold.ttf')
+            }
+
+            .font-as{
+                font-family: as, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: at  ;
+                src: url('assets/fonts/FreeMonoBoldOblique.ttf')
+            }
+
+            .font-at{
+                font-family: at, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: au  ;
+                src: url('assets/fonts/FreeMonoOblique.ttf')
+            }
+
+            .font-au{
+                font-family: au, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: av  ;
+                src: url('assets/fonts/FreeSans.ttf')
+            }
+
+            .font-av{
+                font-family: av, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: aw  ;
+                src: url('assets/fonts/FreeSansBold.ttf')
+            }
+
+            .font-aw{
+                font-family: aw, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ax  ;
+                src: url('assets/fonts/FreeSansBoldOblique.ttf')
+            }
+
+            .font-ax{
+                font-family: ax, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ay  ;
+                src: url('assets/fonts/FreeSansOblique.ttf')
+            }
+
+            .font-ay{
+                font-family: ay, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: az  ;
+                src: url('assets/fonts/Metrophobic.ttf')
+            }
+
+            .font-az{
+                font-family: az, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ba  ;
+                src: url('assets/fonts/MgOpenCosmeticaRegular.ttf')
+            }
+
+            .font-ba{
+                font-family: ba, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bb  ;
+                src: url('assets/fonts/MgOpenModataBold.ttf')
+            }
+
+            .font-bb{
+                font-family: bb, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bc  ;
+                src: url('assets/fonts/MgOpenModataBoldOblique.ttf')
+            }
+
+            .font-bc{
+                font-family: bc, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bd  ;
+                src: url('assets/fonts/MgOpenModataOblique.ttf')
+            }
+
+            .font-bd{
+                font-family: bd, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: be  ;
+                src: url('assets/fonts/MgOpenModataRegular.ttf')
+            }
+
+            .font-be{
+                font-family: be, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bf  ;
+                src: url('assets/fonts/OCRA.ttf')
+            }
+
+            .font-bf{
+                font-family: bf, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bg  ;
+                src: url('assets/fonts/OpenSans-Bold.ttf')
+            }
+
+            .font-bg{
+                font-family: bg, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bh  ;
+                src: url('assets/fonts/OpenSans-BoldItalic.ttf')
+            }
+
+            .font-bh{
+                font-family: bh, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bi  ;
+                src: url('assets/fonts/OpenSans-CondBold.ttf')
+            }
+
+            .font-bi{
+                font-family: bi, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bj  ;
+                src: url('assets/fonts/OpenSans-CondLight.ttf')
+            }
+
+            .font-bj{
+                font-family: bj, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bk  ;
+                src: url('assets/fonts/OpenSans-CondLightItalic.ttf')
+            }
+
+            .font-bk{
+                font-family: bk, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bl  ;
+                src: url('assets/fonts/OpenSans-ExtraBold.ttf')
+            }
+
+            .font-bl{
+                font-family: bl, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bm  ;
+                src: url('assets/fonts/OpenSans-ExtraBoldItalic.ttf')
+            }
+
+            .font-bm{
+                font-family: bm, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bn  ;
+                src: url('assets/fonts/OpenSans-Italic.ttf')
+            }
+
+            .font-bn{
+                font-family: bn, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bo  ;
+                src: url('assets/fonts/OpenSans-Light.ttf')
+            }
+
+            .font-bo{
+                font-family: bo, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bp  ;
+                src: url('assets/fonts/OpenSans-LightItalic.ttf')
+            }
+
+            .font-bp{
+                font-family: bp, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bq  ;
+                src: url('assets/fonts/OpenSans-Regular.ttf')
+            }
+
+            .font-bq{
+                font-family: bq, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: br  ;
+                src: url('assets/fonts/OpenSans-Semibold.ttf')
+            }
+
+            .font-br{
+                font-family: br, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bs  ;
+                src: url('assets/fonts/OpenSans-SemiboldItalic.ttf')
+            }
+
+            .font-bs{
+                font-family: bs, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bt  ;
+                src: url('assets/fonts/Roboto-Black.ttf')
+            }
+
+            .font-bt{
+                font-family: bt, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bu  ;
+                src: url('assets/fonts/Roboto-BlackItalic.ttf')
+            }
+
+            .font-bu{
+                font-family: bu, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bv  ;
+                src: url('assets/fonts/Roboto-Bold.ttf')
+            }
+
+            .font-bv{
+                font-family: bv, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bw  ;
+                src: url('assets/fonts/Roboto-BoldItalic.ttf')
+            }
+
+            .font-bw{
+                font-family: bw, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bx  ;
+                src: url('assets/fonts/Roboto-Italic.ttf')
+            }
+
+            .font-bx{
+                font-family: bx, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: by  ;
+                src: url('assets/fonts/Roboto-Light.ttf')
+            }
+
+            .font-by{
+                font-family: by, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: bz  ;
+                src: url('assets/fonts/Roboto-LightItalic.ttf')
+            }
+
+            .font-bz{
+                font-family: bz, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ca  ;
+                src: url('assets/fonts/Roboto-Medium.ttf')
+            }
+
+            .font-ca{
+                font-family: ca, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cb  ;
+                src: url('assets/fonts/Roboto-MediumItalic.ttf')
+            }
+
+            .font-cb{
+                font-family: cb, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cc  ;
+                src: url('assets/fonts/Roboto-Regular.ttf')
+            }
+
+            .font-cc{
+                font-family: cc, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cd  ;
+                src: url('assets/fonts/Roboto-Thin.ttf')
+            }
+
+            .font-cd{
+                font-family: cd, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ce  ;
+                src: url('assets/fonts/Roboto-ThinItalic.ttf')
+            }
+
+            .font-ce{
+                font-family: ce, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cf  ;
+                src: url('assets/fonts/RobotoCondensed-Bold.ttf')
+            }
+
+            .font-cf{
+                font-family: cf, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cg  ;
+                src: url('assets/fonts/RobotoCondensed-BoldItalic.ttf')
+            }
+
+            .font-cg{
+                font-family: cg, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ch  ;
+                src: url('assets/fonts/RobotoCondensed-Italic.ttf')
+            }
+
+            .font-ch{
+                font-family: ch, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ci  ;
+                src: url('assets/fonts/RobotoCondensed-Light.ttf')
+            }
+
+            .font-ci{
+                font-family: ci, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cj  ;
+                src: url('assets/fonts/RobotoCondensed-LightItalic.ttf')
+            }
+
+            .font-cj{
+                font-family: cj, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ck  ;
+                src: url('assets/fonts/RobotoCondensed-Regular.ttf')
+            }
+
+            .font-ck{
+                font-family: ck, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cl  ;
+                src: url('assets/fonts/SourceCodePro-Black.ttf')
+            }
+
+            .font-cl{
+                font-family: cl, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cm  ;
+                src: url('assets/fonts/SourceCodePro-Bold.ttf')
+            }
+
+            .font-cm{
+                font-family: cm, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cn  ;
+                src: url('assets/fonts/SourceCodePro-ExtraLight.ttf')
+            }
+
+            .font-cn{
+                font-family: cn, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: co  ;
+                src: url('assets/fonts/SourceCodePro-Light.ttf')
+            }
+
+            .font-co{
+                font-family: co, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cp  ;
+                src: url('assets/fonts/SourceCodePro-Medium.ttf')
+            }
+
+            .font-cp{
+                font-family: cp, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cq  ;
+                src: url('assets/fonts/SourceCodePro-Regular.ttf')
+            }
+
+            .font-cq{
+                font-family: cq, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cr  ;
+                src: url('assets/fonts/SourceCodePro-Semibold.ttf')
+            }
+
+            .font-cr{
+                font-family: cr, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cs  ;
+                src: url('assets/fonts/SourceSerifPro-Bold.ttf')
+            }
+
+            .font-cs{
+                font-family: cs, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: ct  ;
+                src: url('assets/fonts/SourceSerifPro-Regular.ttf')
+            }
+
+            .font-ct{
+                font-family: ct, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cu  ;
+                src: url('assets/fonts/SourceSerifPro-Semibold.ttf')
+            }
+
+            .font-cu{
+                font-family: cu, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cv  ;
+                src: url('assets/fonts/Squarish Sans CT Regular SC.ttf')
+            }
+
+            .font-cv{
+                font-family: cv, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cw  ;
+                src: url('assets/fonts/Squarish Sans CT Regular.ttf')
+            }
+
+            .font-cw{
+                font-family: cw, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cx  ;
+                src: url('assets/fonts/Transport Medium Greek.ttf')
+            }
+
+            .font-cx{
+                font-family: cx, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cy  ;
+                src: url('assets/fonts/Ubuntu-B.ttf')
+            }
+
+            .font-cy{
+                font-family: cy, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: cz  ;
+                src: url('assets/fonts/Ubuntu-BI.ttf')
+            }
+
+            .font-cz{
+                font-family: cz, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: da  ;
+                src: url('assets/fonts/Ubuntu-C.ttf')
+            }
+
+            .font-da{
+                font-family: da, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: db  ;
+                src: url('assets/fonts/Ubuntu-L.ttf')
+            }
+
+            .font-db{
+                font-family: db, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dc  ;
+                src: url('assets/fonts/Ubuntu-LI.ttf')
+            }
+
+            .font-dc{
+                font-family: dc, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dd  ;
+                src: url('assets/fonts/Ubuntu-M.ttf')
+            }
+
+            .font-dd{
+                font-family: dd, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: de  ;
+                src: url('assets/fonts/Ubuntu-MI.ttf')
+            }
+
+            .font-de{
+                font-family: de, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: df  ;
+                src: url('assets/fonts/Ubuntu-R.ttf')
+            }
+
+            .font-df{
+                font-family: df, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dg  ;
+                src: url('assets/fonts/Ubuntu-RI.ttf')
+            }
+
+            .font-dg{
+                font-family: dg, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dh  ;
+                src: url('assets/fonts/UbuntuMono-B.ttf')
+            }
+
+            .font-dh{
+                font-family: dh, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: di  ;
+                src: url('assets/fonts/UbuntuMono-BI.ttf')
+            }
+
+            .font-di{
+                font-family: di, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dj  ;
+                src: url('assets/fonts/UbuntuMono-R.ttf')
+            }
+
+            .font-dj{
+                font-family: dj, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        @font-face {
+                font-family: dk  ;
+                src: url('assets/fonts/UbuntuMono-RI.ttf')
+            }
+
+            .font-dk{
+                font-family: dk, serif;
+            }
+
+            #setting-section {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 8px 8px;
+                background-color: rgba(255, 255, 255, 0.95);
+                font-size: 0.75em;
+                border-top: 1px solid #EEE;
+            }
+
+            #setting-section label {
+                color: #AAA;
+                display: inline-block;
+                margin: 0 2px 0;
+                z-index: 22;
+            }
+
+            .wide-input {
+                width: 400px;
+            }
+        .sample-label {
+            margin: 5px 0;
+            line-height: 1em;
+        }
+
+        .l {
+            font-size: 2em;
+        }
+
+        .m {
+            font-size: 1em;
+        }
+
+        .s {
+            font-size: 0.5em;
+        }
+
+        .sample-td {
+            padding: 10px 20px;
+        }
+
+        .v-center {
+            vertical-align: middle;
+        }
+
+        .w120 {
+            width: 120px;
+        }
+    </style>
+    <script src="./assets/javascripts/angular.js"></script>
+    <script src="./assets/javascripts/gallery.js"></script>
+    <script>
+        (function (ng) {
+            ng.module('FontThemeApp', []).controller('FontThemCtrl', function FontThemCtrl($scope) {
+                $scope.sampleText = 'Grumpy wizards make toxic brew for the evil Queen and Jack.';
+            });
+        })(angular);
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 onclick="location.reload()">fur-fonts</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="width:90px;"/>
+                <col style="width:120px;"/>
+                <col/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Theme</th>
+                <th>Fonts</th>
+                <th>Sample</th>
+            </tr>
+            <tbody>
+                <tr>
+<th>a</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-a"
+                                                                                 href="assets/fonts/Alef-Bold.ttf">Alef-Bold</a></td>
+                    <td class="sample-td font-a">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>b</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-b"
+                                                                                 href="assets/fonts/Alef-Regular.ttf">Alef-Regular</a></td>
+                    <td class="sample-td font-b">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>c</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-c"
+                                                                                 href="assets/fonts/Anonymous Pro B.ttf">Anonymous Pro B</a></td>
+                    <td class="sample-td font-c">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>d</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-d"
+                                                                                 href="assets/fonts/Anonymous Pro BI.ttf">Anonymous Pro BI</a></td>
+                    <td class="sample-td font-d">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>e</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-e"
+                                                                                 href="assets/fonts/Anonymous Pro I.ttf">Anonymous Pro I</a></td>
+                    <td class="sample-td font-e">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>f</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-f"
+                                                                                 href="assets/fonts/Anonymous Pro Minus B.ttf">Anonymous Pro Minus B</a></td>
+                    <td class="sample-td font-f">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>g</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-g"
+                                                                                 href="assets/fonts/Anonymous Pro Minus BI.ttf">Anonymous Pro Minus BI</a></td>
+                    <td class="sample-td font-g">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>h</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-h"
+                                                                                 href="assets/fonts/Anonymous Pro Minus I.ttf">Anonymous Pro Minus I</a></td>
+                    <td class="sample-td font-h">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>i</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-i"
+                                                                                 href="assets/fonts/Anonymous Pro Minus.ttf">Anonymous Pro Minus</a></td>
+                    <td class="sample-td font-i">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>j</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-j"
+                                                                                 href="assets/fonts/Anonymous Pro.ttf">Anonymous Pro</a></td>
+                    <td class="sample-td font-j">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>k</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-k"
+                                                                                 href="assets/fonts/Cantarell-Bold.ttf">Cantarell-Bold</a></td>
+                    <td class="sample-td font-k">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>l</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-l"
+                                                                                 href="assets/fonts/Cantarell-BoldOblique.ttf">Cantarell-BoldOblique</a></td>
+                    <td class="sample-td font-l">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>m</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-m"
+                                                                                 href="assets/fonts/Cantarell-Oblique.ttf">Cantarell-Oblique</a></td>
+                    <td class="sample-td font-m">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>n</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-n"
+                                                                                 href="assets/fonts/Cantarell-Regular.ttf">Cantarell-Regular</a></td>
+                    <td class="sample-td font-n">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>o</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-o"
+                                                                                 href="assets/fonts/Comfortaa-Bold.ttf">Comfortaa-Bold</a></td>
+                    <td class="sample-td font-o">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>p</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-p"
+                                                                                 href="assets/fonts/Comfortaa-Light.ttf">Comfortaa-Light</a></td>
+                    <td class="sample-td font-p">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>q</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-q"
+                                                                                 href="assets/fonts/Comfortaa-Regular.ttf">Comfortaa-Regular</a></td>
+                    <td class="sample-td font-q">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>r</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-r"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Bold-Oblique.ttf">ComicNeue-Angular-Bold-Oblique</a></td>
+                    <td class="sample-td font-r">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>s</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-s"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Bold.ttf">ComicNeue-Angular-Bold</a></td>
+                    <td class="sample-td font-s">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>t</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-t"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Light-Oblique.ttf">ComicNeue-Angular-Light-Oblique</a></td>
+                    <td class="sample-td font-t">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>u</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-u"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Light.ttf">ComicNeue-Angular-Light</a></td>
+                    <td class="sample-td font-u">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>v</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-v"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Regular-Oblique.ttf">ComicNeue-Angular-Regular-Oblique</a></td>
+                    <td class="sample-td font-v">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>w</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-w"
+                                                                                 href="assets/fonts/ComicNeue-Angular-Regular.ttf">ComicNeue-Angular-Regular</a></td>
+                    <td class="sample-td font-w">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>x</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-x"
+                                                                                 href="assets/fonts/ComicNeue-Bold-Oblique.ttf">ComicNeue-Bold-Oblique</a></td>
+                    <td class="sample-td font-x">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>y</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-y"
+                                                                                 href="assets/fonts/ComicNeue-Bold.ttf">ComicNeue-Bold</a></td>
+                    <td class="sample-td font-y">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>z</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-z"
+                                                                                 href="assets/fonts/ComicNeue-Light-Oblique.ttf">ComicNeue-Light-Oblique</a></td>
+                    <td class="sample-td font-z">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>aa</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-aa"
+                                                                                 href="assets/fonts/ComicNeue-Light.ttf">ComicNeue-Light</a></td>
+                    <td class="sample-td font-aa">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ab</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ab"
+                                                                                 href="assets/fonts/ComicNeue-Regular-Oblique.ttf">ComicNeue-Regular-Oblique</a></td>
+                    <td class="sample-td font-ab">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ac</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ac"
+                                                                                 href="assets/fonts/ComicNeue-Regular.ttf">ComicNeue-Regular</a></td>
+                    <td class="sample-td font-ac">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ad</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ad"
+                                                                                 href="assets/fonts/Dosis-Bold.ttf">Dosis-Bold</a></td>
+                    <td class="sample-td font-ad">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ae</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ae"
+                                                                                 href="assets/fonts/Dosis-Book.ttf">Dosis-Book</a></td>
+                    <td class="sample-td font-ae">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>af</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-af"
+                                                                                 href="assets/fonts/Dosis-ExtraBold.ttf">Dosis-ExtraBold</a></td>
+                    <td class="sample-td font-af">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ag</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ag"
+                                                                                 href="assets/fonts/Dosis-ExtraLight.ttf">Dosis-ExtraLight</a></td>
+                    <td class="sample-td font-ag">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ah</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ah"
+                                                                                 href="assets/fonts/Dosis-Light.ttf">Dosis-Light</a></td>
+                    <td class="sample-td font-ah">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ai</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ai"
+                                                                                 href="assets/fonts/Dosis-Medium.ttf">Dosis-Medium</a></td>
+                    <td class="sample-td font-ai">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>aj</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-aj"
+                                                                                 href="assets/fonts/Dosis-SemiBold.ttf">Dosis-SemiBold</a></td>
+                    <td class="sample-td font-aj">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ak</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ak"
+                                                                                 href="assets/fonts/EkMukta-Bold.ttf">EkMukta-Bold</a></td>
+                    <td class="sample-td font-ak">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>al</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-al"
+                                                                                 href="assets/fonts/EkMukta-ExtraBold.ttf">EkMukta-ExtraBold</a></td>
+                    <td class="sample-td font-al">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>am</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-am"
+                                                                                 href="assets/fonts/EkMukta-ExtraLight.ttf">EkMukta-ExtraLight</a></td>
+                    <td class="sample-td font-am">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>an</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-an"
+                                                                                 href="assets/fonts/EkMukta-Light.ttf">EkMukta-Light</a></td>
+                    <td class="sample-td font-an">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ao</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ao"
+                                                                                 href="assets/fonts/EkMukta-Medium.ttf">EkMukta-Medium</a></td>
+                    <td class="sample-td font-ao">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ap</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ap"
+                                                                                 href="assets/fonts/EkMukta-Regular.ttf">EkMukta-Regular</a></td>
+                    <td class="sample-td font-ap">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>aq</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-aq"
+                                                                                 href="assets/fonts/EkMukta-SemiBold.ttf">EkMukta-SemiBold</a></td>
+                    <td class="sample-td font-aq">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ar</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ar"
+                                                                                 href="assets/fonts/FreeMono.ttf">FreeMono</a></td>
+                    <td class="sample-td font-ar">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>as</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-as"
+                                                                                 href="assets/fonts/FreeMonoBold.ttf">FreeMonoBold</a></td>
+                    <td class="sample-td font-as">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>at</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-at"
+                                                                                 href="assets/fonts/FreeMonoBoldOblique.ttf">FreeMonoBoldOblique</a></td>
+                    <td class="sample-td font-at">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>au</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-au"
+                                                                                 href="assets/fonts/FreeMonoOblique.ttf">FreeMonoOblique</a></td>
+                    <td class="sample-td font-au">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>av</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-av"
+                                                                                 href="assets/fonts/FreeSans.ttf">FreeSans</a></td>
+                    <td class="sample-td font-av">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>aw</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-aw"
+                                                                                 href="assets/fonts/FreeSansBold.ttf">FreeSansBold</a></td>
+                    <td class="sample-td font-aw">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ax</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ax"
+                                                                                 href="assets/fonts/FreeSansBoldOblique.ttf">FreeSansBoldOblique</a></td>
+                    <td class="sample-td font-ax">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ay</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ay"
+                                                                                 href="assets/fonts/FreeSansOblique.ttf">FreeSansOblique</a></td>
+                    <td class="sample-td font-ay">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>az</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-az"
+                                                                                 href="assets/fonts/Metrophobic.ttf">Metrophobic</a></td>
+                    <td class="sample-td font-az">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ba</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ba"
+                                                                                 href="assets/fonts/MgOpenCosmeticaRegular.ttf">MgOpenCosmeticaRegular</a></td>
+                    <td class="sample-td font-ba">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bb</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bb"
+                                                                                 href="assets/fonts/MgOpenModataBold.ttf">MgOpenModataBold</a></td>
+                    <td class="sample-td font-bb">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bc</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bc"
+                                                                                 href="assets/fonts/MgOpenModataBoldOblique.ttf">MgOpenModataBoldOblique</a></td>
+                    <td class="sample-td font-bc">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bd</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bd"
+                                                                                 href="assets/fonts/MgOpenModataOblique.ttf">MgOpenModataOblique</a></td>
+                    <td class="sample-td font-bd">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>be</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-be"
+                                                                                 href="assets/fonts/MgOpenModataRegular.ttf">MgOpenModataRegular</a></td>
+                    <td class="sample-td font-be">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bf</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bf"
+                                                                                 href="assets/fonts/OCRA.ttf">OCRA</a></td>
+                    <td class="sample-td font-bf">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bg</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bg"
+                                                                                 href="assets/fonts/OpenSans-Bold.ttf">OpenSans-Bold</a></td>
+                    <td class="sample-td font-bg">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bh</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bh"
+                                                                                 href="assets/fonts/OpenSans-BoldItalic.ttf">OpenSans-BoldItalic</a></td>
+                    <td class="sample-td font-bh">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bi</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bi"
+                                                                                 href="assets/fonts/OpenSans-CondBold.ttf">OpenSans-CondBold</a></td>
+                    <td class="sample-td font-bi">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bj</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bj"
+                                                                                 href="assets/fonts/OpenSans-CondLight.ttf">OpenSans-CondLight</a></td>
+                    <td class="sample-td font-bj">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bk</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bk"
+                                                                                 href="assets/fonts/OpenSans-CondLightItalic.ttf">OpenSans-CondLightItalic</a></td>
+                    <td class="sample-td font-bk">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bl</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bl"
+                                                                                 href="assets/fonts/OpenSans-ExtraBold.ttf">OpenSans-ExtraBold</a></td>
+                    <td class="sample-td font-bl">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bm</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bm"
+                                                                                 href="assets/fonts/OpenSans-ExtraBoldItalic.ttf">OpenSans-ExtraBoldItalic</a></td>
+                    <td class="sample-td font-bm">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bn</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bn"
+                                                                                 href="assets/fonts/OpenSans-Italic.ttf">OpenSans-Italic</a></td>
+                    <td class="sample-td font-bn">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bo</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bo"
+                                                                                 href="assets/fonts/OpenSans-Light.ttf">OpenSans-Light</a></td>
+                    <td class="sample-td font-bo">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bp</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bp"
+                                                                                 href="assets/fonts/OpenSans-LightItalic.ttf">OpenSans-LightItalic</a></td>
+                    <td class="sample-td font-bp">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bq</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bq"
+                                                                                 href="assets/fonts/OpenSans-Regular.ttf">OpenSans-Regular</a></td>
+                    <td class="sample-td font-bq">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>br</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-br"
+                                                                                 href="assets/fonts/OpenSans-Semibold.ttf">OpenSans-Semibold</a></td>
+                    <td class="sample-td font-br">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bs</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bs"
+                                                                                 href="assets/fonts/OpenSans-SemiboldItalic.ttf">OpenSans-SemiboldItalic</a></td>
+                    <td class="sample-td font-bs">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bt</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bt"
+                                                                                 href="assets/fonts/Roboto-Black.ttf">Roboto-Black</a></td>
+                    <td class="sample-td font-bt">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bu</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bu"
+                                                                                 href="assets/fonts/Roboto-BlackItalic.ttf">Roboto-BlackItalic</a></td>
+                    <td class="sample-td font-bu">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bv</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bv"
+                                                                                 href="assets/fonts/Roboto-Bold.ttf">Roboto-Bold</a></td>
+                    <td class="sample-td font-bv">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bw</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bw"
+                                                                                 href="assets/fonts/Roboto-BoldItalic.ttf">Roboto-BoldItalic</a></td>
+                    <td class="sample-td font-bw">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bx</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bx"
+                                                                                 href="assets/fonts/Roboto-Italic.ttf">Roboto-Italic</a></td>
+                    <td class="sample-td font-bx">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>by</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-by"
+                                                                                 href="assets/fonts/Roboto-Light.ttf">Roboto-Light</a></td>
+                    <td class="sample-td font-by">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>bz</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-bz"
+                                                                                 href="assets/fonts/Roboto-LightItalic.ttf">Roboto-LightItalic</a></td>
+                    <td class="sample-td font-bz">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ca</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ca"
+                                                                                 href="assets/fonts/Roboto-Medium.ttf">Roboto-Medium</a></td>
+                    <td class="sample-td font-ca">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cb</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cb"
+                                                                                 href="assets/fonts/Roboto-MediumItalic.ttf">Roboto-MediumItalic</a></td>
+                    <td class="sample-td font-cb">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cc</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cc"
+                                                                                 href="assets/fonts/Roboto-Regular.ttf">Roboto-Regular</a></td>
+                    <td class="sample-td font-cc">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cd</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cd"
+                                                                                 href="assets/fonts/Roboto-Thin.ttf">Roboto-Thin</a></td>
+                    <td class="sample-td font-cd">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ce</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ce"
+                                                                                 href="assets/fonts/Roboto-ThinItalic.ttf">Roboto-ThinItalic</a></td>
+                    <td class="sample-td font-ce">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cf</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cf"
+                                                                                 href="assets/fonts/RobotoCondensed-Bold.ttf">RobotoCondensed-Bold</a></td>
+                    <td class="sample-td font-cf">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cg</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cg"
+                                                                                 href="assets/fonts/RobotoCondensed-BoldItalic.ttf">RobotoCondensed-BoldItalic</a></td>
+                    <td class="sample-td font-cg">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ch</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ch"
+                                                                                 href="assets/fonts/RobotoCondensed-Italic.ttf">RobotoCondensed-Italic</a></td>
+                    <td class="sample-td font-ch">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ci</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ci"
+                                                                                 href="assets/fonts/RobotoCondensed-Light.ttf">RobotoCondensed-Light</a></td>
+                    <td class="sample-td font-ci">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cj</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cj"
+                                                                                 href="assets/fonts/RobotoCondensed-LightItalic.ttf">RobotoCondensed-LightItalic</a></td>
+                    <td class="sample-td font-cj">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ck</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ck"
+                                                                                 href="assets/fonts/RobotoCondensed-Regular.ttf">RobotoCondensed-Regular</a></td>
+                    <td class="sample-td font-ck">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cl</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cl"
+                                                                                 href="assets/fonts/SourceCodePro-Black.ttf">SourceCodePro-Black</a></td>
+                    <td class="sample-td font-cl">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cm</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cm"
+                                                                                 href="assets/fonts/SourceCodePro-Bold.ttf">SourceCodePro-Bold</a></td>
+                    <td class="sample-td font-cm">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cn</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cn"
+                                                                                 href="assets/fonts/SourceCodePro-ExtraLight.ttf">SourceCodePro-ExtraLight</a></td>
+                    <td class="sample-td font-cn">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>co</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-co"
+                                                                                 href="assets/fonts/SourceCodePro-Light.ttf">SourceCodePro-Light</a></td>
+                    <td class="sample-td font-co">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cp</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cp"
+                                                                                 href="assets/fonts/SourceCodePro-Medium.ttf">SourceCodePro-Medium</a></td>
+                    <td class="sample-td font-cp">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cq</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cq"
+                                                                                 href="assets/fonts/SourceCodePro-Regular.ttf">SourceCodePro-Regular</a></td>
+                    <td class="sample-td font-cq">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cr</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cr"
+                                                                                 href="assets/fonts/SourceCodePro-Semibold.ttf">SourceCodePro-Semibold</a></td>
+                    <td class="sample-td font-cr">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cs</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cs"
+                                                                                 href="assets/fonts/SourceSerifPro-Bold.ttf">SourceSerifPro-Bold</a></td>
+                    <td class="sample-td font-cs">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>ct</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-ct"
+                                                                                 href="assets/fonts/SourceSerifPro-Regular.ttf">SourceSerifPro-Regular</a></td>
+                    <td class="sample-td font-ct">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cu</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cu"
+                                                                                 href="assets/fonts/SourceSerifPro-Semibold.ttf">SourceSerifPro-Semibold</a></td>
+                    <td class="sample-td font-cu">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cv</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cv"
+                                                                                 href="assets/fonts/Squarish Sans CT Regular SC.ttf">Squarish Sans CT Regular SC</a></td>
+                    <td class="sample-td font-cv">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cw</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cw"
+                                                                                 href="assets/fonts/Squarish Sans CT Regular.ttf">Squarish Sans CT Regular</a></td>
+                    <td class="sample-td font-cw">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cx</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cx"
+                                                                                 href="assets/fonts/Transport Medium Greek.ttf">Transport Medium Greek</a></td>
+                    <td class="sample-td font-cx">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cy</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cy"
+                                                                                 href="assets/fonts/Ubuntu-B.ttf">Ubuntu-B</a></td>
+                    <td class="sample-td font-cy">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>cz</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-cz"
+                                                                                 href="assets/fonts/Ubuntu-BI.ttf">Ubuntu-BI</a></td>
+                    <td class="sample-td font-cz">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>da</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-da"
+                                                                                 href="assets/fonts/Ubuntu-C.ttf">Ubuntu-C</a></td>
+                    <td class="sample-td font-da">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>db</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-db"
+                                                                                 href="assets/fonts/Ubuntu-L.ttf">Ubuntu-L</a></td>
+                    <td class="sample-td font-db">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dc</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dc"
+                                                                                 href="assets/fonts/Ubuntu-LI.ttf">Ubuntu-LI</a></td>
+                    <td class="sample-td font-dc">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dd</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dd"
+                                                                                 href="assets/fonts/Ubuntu-M.ttf">Ubuntu-M</a></td>
+                    <td class="sample-td font-dd">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>de</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-de"
+                                                                                 href="assets/fonts/Ubuntu-MI.ttf">Ubuntu-MI</a></td>
+                    <td class="sample-td font-de">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>df</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-df"
+                                                                                 href="assets/fonts/Ubuntu-R.ttf">Ubuntu-R</a></td>
+                    <td class="sample-td font-df">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dg</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dg"
+                                                                                 href="assets/fonts/Ubuntu-RI.ttf">Ubuntu-RI</a></td>
+                    <td class="sample-td font-dg">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dh</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dh"
+                                                                                 href="assets/fonts/UbuntuMono-B.ttf">UbuntuMono-B</a></td>
+                    <td class="sample-td font-dh">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>di</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-di"
+                                                                                 href="assets/fonts/UbuntuMono-BI.ttf">UbuntuMono-BI</a></td>
+                    <td class="sample-td font-di">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dj</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dj"
+                                                                                 href="assets/fonts/UbuntuMono-R.ttf">UbuntuMono-R</a></td>
+                    <td class="sample-td font-dj">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+                <tr>
+<th>dk</th>
+                    <td class="text-center v-center" style="max-width:210px;"><a class="font-dk"
+                                                                                 href="assets/fonts/UbuntuMono-RI.ttf">UbuntuMono-RI</a></td>
+                    <td class="sample-td font-dk">
+                        <div class="sample-label l" ng:bind="sampleText"></div>
+                        <div class="sample-label m" ng:bind="sampleText"></div>
+                        <div class="sample-label s" ng:bind="sampleText"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<section id="setting-section">
+    <label for="sample-text-input">Sample text</label>
+    <input ng:model="sampleText" class="wide-input" placeholder="sample text" id="sample-text-input">
+</section>
+<footer>
+    <a href="https://github.com/tick-tack/fur"><img src="docs/images/fur-banner.png" class="footer-logo"></a>
+    <small>© 2014 Taka Okunishi</small>
+
+    <a id="jump-to-top-btn" href="#">⇧Jump to Top</a>
+    <nav>
+        <a class="nav-item" href="https://github.com/fur-repo/fur/">Homepage</a>
+        <a class="nav-item" href="http://fur-repo/fur/apiguide/">API Guide</a>
+        <a class="nav-item" href="http://fur-repo/fur-resources/">Gallery</a>
+    </nav>
+</footer>
+</body>
+</html>

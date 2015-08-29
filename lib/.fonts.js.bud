@@ -12,8 +12,8 @@ var _themeName = require('./_theme_name');
 
 
 module.exports = {
-    force: true,
-    mode: '444',
+    force: false,
+    mode: '644',
     data: {
         get themes() {
             return expandglob.sync('fonts/*.ttf', {

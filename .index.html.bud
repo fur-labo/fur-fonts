@@ -1,0 +1,33 @@
+/**
+ * Bud file for font themes.
+ */
+
+"use strict";
+
+
+var stringcase = require('stringcase'),
+    path = require('path');
+
+var furFonts = require('./lib');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        pkg:require('./package.json'),
+        get examples() {
+            return Object.keys(furFonts).map(function (theme) {
+                var src = furFonts[theme]['$src'];
+                return {
+                    theme: theme,
+                    name: path.basename(src, path.extname(src)),
+                    filename: path.join('assets', src)
+                };
+            })
+        }
+    }
+};
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}

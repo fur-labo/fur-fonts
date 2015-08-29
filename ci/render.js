@@ -58,7 +58,7 @@ apeTasking.runTasks('build', [
             var dest = path.join(exampleImageDir, "example-font-" + theme + '.svg');
             writexml(dest, 'svg', {
                 '@': {
-                    id: 'fur-testing-banner-svg',
+                    id: name,
                     xmlns: "http://www.w3.org/2000/svg",
                     width: w,
                     height: h,
