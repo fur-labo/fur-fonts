@@ -16,7 +16,7 @@ function _read(filename) {
 {{#each themes}}
 /**
  * @function {{theme}}
- * @retusn {buffer} - data for theme "{{theme}}".
+ * @returns {buffer} - data for theme "{{theme}}".
  */
 exports.{{theme}} = function {{theme}}() {
     return _read('{{filename}}');
