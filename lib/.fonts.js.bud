@@ -11,7 +11,7 @@ const path = require('path')
 let _themeName = require('./_theme_name')
 
 module.exports = {
-  force: false,
+  force: true,
   mode: '644',
   data: {
     get themes () {
