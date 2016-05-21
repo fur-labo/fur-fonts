@@ -1,6 +1,6 @@
 {
   "name": "fur-fonts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Fonts for fur.",
   "main": "lib",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fur-repo/fur-fonts#readme",
   "dependencies": {
+    "alnum": "^1.0.1",
     "argx": "^2.0.2",
     "co": "^4.6.0",
     "stringcase": "^2.0.1",

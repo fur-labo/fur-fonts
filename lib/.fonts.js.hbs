@@ -8,21 +8,22 @@ const fs = require('fs')
 
 const assetsDir = path.resolve(__dirname, '../assets')
 
-function _read(filename) {
+function _read (filename) {
   return fs.readFileSync(path.resolve(assetsDir, filename))
 }
-
 
 {{#each themes}}
 /**
  * @function {{theme}}
  * @returns {buffer} - data for theme "{{theme}}".
  */
-exports.{{theme}} = function {{theme}} () {
+function {{theme}} () {
   return _read('{{filename}}')
 }
-exports.{{theme}}.$src = '{{filename}}'
-exports.{{theme}}.$type = '{{type}}'
+
+exports.{{theme}} = Object.assign({{theme}}, {
+  $src: '{{filename}}',
+  $type: '{{type}}'
+})
 
 {{/each}}
-

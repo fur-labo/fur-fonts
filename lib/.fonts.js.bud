@@ -7,8 +7,7 @@
 const stringcase = require('stringcase')
 const expandglob = require('expandglob')
 const path = require('path')
-
-let _themeName = require('./_theme_name')
+const alnum = require('alnum')
 
 module.exports = {
   force: true,
@@ -17,19 +16,19 @@ module.exports = {
     get themes () {
       return expandglob.sync('fonts/*.ttf', {
         cwd: path.resolve(__dirname, '../assets')
-      }).map(function (filename, i) {
-        var theme = _themeName(i)
+      }).map((filename, i) => {
+        let theme = alnum.asString(i + 1)
         return {
-          theme: theme,
-          filename: filename,
+          theme,
+          filename,
           type: path.extname(filename).replace(/^\./, '')
         }
       })
     }
   }
-};
+}
 
 if (!module.parent) {
-  require('coz').render(__filename);
+  require('coz').render(__filename)
 }
 
