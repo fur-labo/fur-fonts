@@ -4,103 +4,94 @@
  * Build this project.
  */
 
-"use strict";
+'use strict'
 
-var path = require('path'),
-    mkdirp = require('mkdirp'),
-    async = require('async'),
-    fs = require('fs'),
-    svgpng = require('svgpng'),
-    writexml = require('writexml'),
-    expandglob = require('expandglob'),
-    filecopy = require('filecopy'),
-    os = require('os'),
-    util = require('util'),
-    apeTasking = require('ape-tasking'),
-    coz = require('coz'),
-    furFonts = require('../lib');
+process.chdir(`${__dirname}/..`)
 
-var basedir = path.resolve(__dirname, '..'),
-    exampleImageDir = path.resolve(basedir, 'docs/examples/images');
+const path = require('path')
+const mkdirp = require('mkdirp')
+const svgpng = require('svgpng')
+const writexml = require('writexml')
+const expandglob = require('expandglob')
+const filecopy = require('filecopy')
+const os = require('os')
+const apeTasking = require('ape-tasking')
+const co = require('co')
+const furFonts = require('../lib')
 
-mkdirp.sync(exampleImageDir);
+const basedir = path.resolve(__dirname, '..')
+const exampleImageDir = path.resolve(basedir, 'doc/example/images')
 
-process.chdir(basedir);
+mkdirp.sync(exampleImageDir)
 
-var IMAGE_WIDTH = 1024,
-    IMAGE_HEIGHT = 128;
+process.chdir(basedir)
 
-apeTasking.runTasks('build', [
-    function collectFonts(callback) {
-        var dest = [
-            'assets/fonts'
-        ];
-        async.eachSeries(dest, function (dest, callback) {
-            async.series([
-                function (callback) {
-                    mkdirp(dest, callback);
-                },
-                function (callback) {
-                    filecopy('third_party/**/+(*.ttf|*.svg|*.eot)', dest, callback);
-                }
-            ], callback);
-        }, callback);
-    },
-    function renderImages(callback) {
-        var w = IMAGE_WIDTH, h = IMAGE_HEIGHT;
-        var themes = Object.keys(furFonts);
-        async.eachSeries(themes, function (theme, callback) {
-            var name = 'font-theme-' + theme;
-            var url = [
-                'data:application/x-font-ttf;base64',
-                furFonts[theme]().toString('base64')
-            ].join(',');
-            var dest = path.join(exampleImageDir, "example-font-" + theme + '.svg');
-            writexml(dest, 'svg', {
-                '@': {
-                    id: name,
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: w,
-                    height: h,
-                    viewbox: [0, 0, w, h].join(' ')
-                },
-                style: {
-                    '#': [
-                        util.format('@font-face {font-family: "%s";src: url("%s")}', name, url),
-                        util.format('text{font-family: "%s";}', name)
-                    ].join(os.EOL)
-                },
-                text: {
-                    '@': {
-                        x: w / 2,
-                        y: h / 2,
-                        'dominant-baseline': "central",
-                        'text-anchor': "middle",
-                        fill: "#38E",
-                        'font-size': "32"
-                    },
-                    '#': 'Grumpy wizards make toxic brew for the evil Queen and Jack.'
-                }
-            }, callback);
-        }, callback);
-    },
-    function renderPng(callback) {
-        async.waterfall([
-            function (callback) {
-                expandglob('*.svg', {cwd: exampleImageDir}, callback);
-            },
-            function (filenames, callback) {
-                var config = filenames.map(function (filename) {
-                    var name = path.basename(filename, '.svg');
-                    return {
-                        src: path.resolve(exampleImageDir, name + '.svg'),
-                        dest: path.resolve(exampleImageDir, name + '.png'),
-                        size: {width: IMAGE_WIDTH, height: IMAGE_HEIGHT}
-                    }
-                });
-                svgpng.byConf(config, callback);
-            }
-        ], callback);
+const IMAGE_WIDTH = 1024
+const IMAGE_HEIGHT = 128
+
+apeTasking.runTasks('render', [
+  () => co(function * () {
+    let destDirs = [
+      'assets/fonts'
+    ]
+    for (let dest of destDirs) {
+      yield new Promise((resolve, reject) =>
+        mkdirp(dest, (err) => err ? reject(err) : resolve())
+      )
+      yield filecopy('third_party/**/+(*.ttf|*.svg|*.eot)', dest)
     }
-], true);
-
+  }),
+  () => co(function * () {
+    let w = IMAGE_WIDTH
+    let h = IMAGE_HEIGHT
+    let themes = Object.keys(furFonts)
+    for (let theme of themes) {
+      let name = `font-theme-${theme}`
+      let url = [
+        'data:application/x-font-ttf;base64',
+        furFonts[ theme ]().toString('base64')
+      ].join(',')
+      let dest = path.join(exampleImageDir, `example-font-${theme}.svg`)
+      yield writexml(dest, 'svg', {
+        '@': {
+          id: name,
+          xmlns: 'http://www.w3.org/2000/svg',
+          width: w,
+          height: h,
+          viewbox: [ 0, 0, w, h ].join(' ')
+        },
+        style: {
+          '#': [
+            `@font-face {font-family: "${name}";src: url("${url}")}`,
+            `text{font-family: "${name}";}`
+          ].join(os.EOL)
+        },
+        text: {
+          '@': {
+            x: w / 2,
+            y: h / 2,
+            'dominant-baseline': 'central',
+            'text-anchor': 'middle',
+            fill: '#38E',
+            'font-size': '32'
+          },
+          '#': 'Grumpy wizards make toxic brew for the evil Queen and Jack.'
+        }
+      })
+    }
+  }),
+  () => co(function * () {
+    let filenames = yield expandglob('*.svg', { cwd: exampleImageDir })
+    let config = filenames.map((filename) => {
+      let name = path.basename(filename, '.svg')
+      return {
+        src: path.resolve(exampleImageDir, name + '.svg'),
+        dest: path.resolve(exampleImageDir, name + '.png'),
+        size: { width: IMAGE_WIDTH, height: IMAGE_HEIGHT }
+      }
+    })
+    yield new Promise((resolve, reject) =>
+      svgpng.byConf(config, (err) => err ? reject(err) : resolve())
+    )
+  })
+], true)

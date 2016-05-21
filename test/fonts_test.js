@@ -1,22 +1,15 @@
 /**
  * Test case for fonts.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var fonts = require('../lib/fonts.js');
+const fonts = require('../lib/fonts.js')
+const assert = require('assert')
 
-exports.setUp = function(done) {
-    done();
-};
-
-exports.tearDown = function(done) {
-    done();
-};
-
-exports['Fonts'] = function(test){
-    Object.keys(fonts).forEach(function(key){
-        test.ok(fonts[key]());
-    });
-    test.done();
-};
+it('Fonts', () => {
+  Object.keys(fonts).forEach((key) => {
+    assert.ok(fonts[ key ]())
+  })
+})
 

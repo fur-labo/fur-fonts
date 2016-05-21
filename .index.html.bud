@@ -2,32 +2,31 @@
  * Bud file for font themes.
  */
 
-"use strict";
+'use strict'
 
+const stringcase = require('stringcase')
+const path = require('path')
 
-var stringcase = require('stringcase'),
-    path = require('path');
-
-var furFonts = require('./lib');
+const furFonts = require('./lib')
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        pkg:require('./package.json'),
-        get examples() {
-            return Object.keys(furFonts).map(function (theme) {
-                var src = furFonts[theme]['$src'];
-                return {
-                    theme: theme,
-                    name: path.basename(src, path.extname(src)),
-                    filename: path.join('assets', src)
-                };
-            })
+  force: true,
+  mode: '444',
+  data: {
+    pkg: require('./package.json'),
+    get examples () {
+      return Object.keys(furFonts).map((theme) => {
+        let src = furFonts[ theme ][ '$src' ]
+        return {
+          theme: theme,
+          name: path.basename(src, path.extname(src)),
+          filename: path.join('assets', src)
         }
+      })
     }
-};
+  }
+}
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }
