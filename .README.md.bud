@@ -23,7 +23,7 @@ module.exports = apeTmpl.readmeMdBud({
   overview: 'doc/overview.md',
   vars: {
     get examples () {
-      return Object.keys(require('./lib')).map(function (theme) {
+      return Object.keys(require('./lib')).map((theme) => {
         return {
           theme: theme
         }

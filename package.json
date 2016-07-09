@@ -1,12 +1,12 @@
 {
   "name": "fur-fonts",
-  "version": "2.0.2",
+  "version": "2.1.1",
   "description": "Fonts for fur.",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js"
   },
-  "repository": "fur-repo/fur-fonts",
+  "repository": "fur-labo/fur-fonts",
   "author": {
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
@@ -17,31 +17,29 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fur-repo/fur-fonts/issues"
+    "url": "https://github.com/fur-labo/fur-fonts/issues"
   },
-  "homepage": "https://github.com/fur-repo/fur-fonts#readme",
+  "homepage": "https://github.com/fur-labo/fur-fonts#readme",
   "dependencies": {
     "alnum": "^1.0.1",
-    "argx": "^2.0.2",
     "co": "^4.6.0",
-    "stringcase": "^2.0.1",
-    "writexml": "^2.0.0"
+    "stringcase": "^3.0.1"
   },
   "devDependencies": {
-    "ape-covering": "^3.0.1",
-    "ape-deploying": "^4.0.2",
-    "ape-releasing": "^3.1.1",
+    "ape-covering": "^3.0.3",
+    "ape-deploying": "^5.0.2",
+    "ape-releasing": "^4.0.1",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^3.1.2",
+    "ape-tasking": "^4.0.3",
     "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.1",
-    "ape-updating": "^3.0.2",
+    "ape-tmpl": "^5.0.11",
+    "ape-updating": "^4.0.4",
     "async": "^1.5.2",
-    "coz": "^6.0.2",
+    "coz": "^6.0.3",
     "expandglob": "^3.0.2",
     "filecopy": "^2.0.0",
     "mkdirp": "^0.5.1",
-    "svgpng": "^1.1.4"
+    "svgpng": "^2.0.0"
   },
   "engines": {
     "node": ">=6",

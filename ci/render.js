@@ -20,7 +20,7 @@ const co = require('co')
 const furFonts = require('../lib')
 
 const basedir = path.resolve(__dirname, '..')
-const exampleImageDir = path.resolve(basedir, 'doc/example/images')
+const exampleImageDir = path.resolve(basedir, 'example/images')
 
 mkdirp.sync(exampleImageDir)
 
@@ -90,8 +90,6 @@ apeTasking.runTasks('render', [
         size: { width: IMAGE_WIDTH, height: IMAGE_HEIGHT }
       }
     })
-    yield new Promise((resolve, reject) =>
-      svgpng.byConf(config, (err) => err ? reject(err) : resolve())
-    )
+    yield svgpng.byConf(config)
   })
 ], true)
