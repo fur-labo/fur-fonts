@@ -5,7 +5,7 @@
 'use strict'
 
 const stringcase = require('stringcase')
-const expandglob = require('expandglob')
+const aglob = require('aglob')
 const path = require('path')
 const alnum = require('alnum')
 
@@ -14,7 +14,7 @@ module.exports = {
   mode: '644',
   data: {
     get themes () {
-      return expandglob.sync('fonts/*.ttf', {
+      return aglob.sync('fonts/*.ttf', {
         cwd: path.resolve(__dirname, '../assets')
       }).map((filename, i) => {
         let theme = alnum.asString(i + 1)

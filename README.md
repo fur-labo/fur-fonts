@@ -53,6 +53,172 @@ Fonts for fur.
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
+
+<a name="section-doc-guides-01-installation-md"></a>
+
+Installation
+-----
+
+```bash
+npm install fur-fonts --save
+```
+
+
+<!-- Section from "doc/guides/01.Installation.md.hbs" End -->
+
+<!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
+
+<a name="section-doc-guides-02-usage-md"></a>
+
+Usage
+----
+
+```javascript
+'use strict'
+
+const furFonts = require('fur-fonts')
+
+const fontA = furFonts.a()
+const fontB = furFonts.b()
+
+console.log(fontA)
+console.log(fontB)
+
+```
+
+<!-- Section from "doc/guides/02.Usage.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Examples.md.hbs" Start -->
+
+<a name="section-doc-guides-03-examples-md"></a>
+
+Examples
+--------
+
+See [fur-fonts-gallery](http://fur-labo.github.io/fur-fonts/)
+
+| Theme | Image |
+| :---: | ----- |
+| **a** | <img src="./example/images/example-font-a.png?v=2.1.3" height="72"> |
+| **b** | <img src="./example/images/example-font-b.png?v=2.1.3" height="72"> |
+| **c** | <img src="./example/images/example-font-c.png?v=2.1.3" height="72"> |
+| **d** | <img src="./example/images/example-font-d.png?v=2.1.3" height="72"> |
+| **e** | <img src="./example/images/example-font-e.png?v=2.1.3" height="72"> |
+| **f** | <img src="./example/images/example-font-f.png?v=2.1.3" height="72"> |
+| **g** | <img src="./example/images/example-font-g.png?v=2.1.3" height="72"> |
+| **h** | <img src="./example/images/example-font-h.png?v=2.1.3" height="72"> |
+| **i** | <img src="./example/images/example-font-i.png?v=2.1.3" height="72"> |
+| **j** | <img src="./example/images/example-font-j.png?v=2.1.3" height="72"> |
+| **k** | <img src="./example/images/example-font-k.png?v=2.1.3" height="72"> |
+| **l** | <img src="./example/images/example-font-l.png?v=2.1.3" height="72"> |
+| **m** | <img src="./example/images/example-font-m.png?v=2.1.3" height="72"> |
+| **n** | <img src="./example/images/example-font-n.png?v=2.1.3" height="72"> |
+| **o** | <img src="./example/images/example-font-o.png?v=2.1.3" height="72"> |
+| **p** | <img src="./example/images/example-font-p.png?v=2.1.3" height="72"> |
+| **q** | <img src="./example/images/example-font-q.png?v=2.1.3" height="72"> |
+| **r** | <img src="./example/images/example-font-r.png?v=2.1.3" height="72"> |
+| **s** | <img src="./example/images/example-font-s.png?v=2.1.3" height="72"> |
+| **t** | <img src="./example/images/example-font-t.png?v=2.1.3" height="72"> |
+| **u** | <img src="./example/images/example-font-u.png?v=2.1.3" height="72"> |
+| **v** | <img src="./example/images/example-font-v.png?v=2.1.3" height="72"> |
+| **w** | <img src="./example/images/example-font-w.png?v=2.1.3" height="72"> |
+| **x** | <img src="./example/images/example-font-x.png?v=2.1.3" height="72"> |
+| **y** | <img src="./example/images/example-font-y.png?v=2.1.3" height="72"> |
+| **z** | <img src="./example/images/example-font-z.png?v=2.1.3" height="72"> |
+| **aa** | <img src="./example/images/example-font-aa.png?v=2.1.3" height="72"> |
+| **ab** | <img src="./example/images/example-font-ab.png?v=2.1.3" height="72"> |
+| **ac** | <img src="./example/images/example-font-ac.png?v=2.1.3" height="72"> |
+| **ad** | <img src="./example/images/example-font-ad.png?v=2.1.3" height="72"> |
+| **ae** | <img src="./example/images/example-font-ae.png?v=2.1.3" height="72"> |
+| **af** | <img src="./example/images/example-font-af.png?v=2.1.3" height="72"> |
+| **ag** | <img src="./example/images/example-font-ag.png?v=2.1.3" height="72"> |
+| **ah** | <img src="./example/images/example-font-ah.png?v=2.1.3" height="72"> |
+| **ai** | <img src="./example/images/example-font-ai.png?v=2.1.3" height="72"> |
+| **aj** | <img src="./example/images/example-font-aj.png?v=2.1.3" height="72"> |
+| **ak** | <img src="./example/images/example-font-ak.png?v=2.1.3" height="72"> |
+| **al** | <img src="./example/images/example-font-al.png?v=2.1.3" height="72"> |
+| **am** | <img src="./example/images/example-font-am.png?v=2.1.3" height="72"> |
+| **an** | <img src="./example/images/example-font-an.png?v=2.1.3" height="72"> |
+| **ao** | <img src="./example/images/example-font-ao.png?v=2.1.3" height="72"> |
+| **ap** | <img src="./example/images/example-font-ap.png?v=2.1.3" height="72"> |
+| **aq** | <img src="./example/images/example-font-aq.png?v=2.1.3" height="72"> |
+| **ar** | <img src="./example/images/example-font-ar.png?v=2.1.3" height="72"> |
+| **as** | <img src="./example/images/example-font-as.png?v=2.1.3" height="72"> |
+| **at** | <img src="./example/images/example-font-at.png?v=2.1.3" height="72"> |
+| **au** | <img src="./example/images/example-font-au.png?v=2.1.3" height="72"> |
+| **av** | <img src="./example/images/example-font-av.png?v=2.1.3" height="72"> |
+| **aw** | <img src="./example/images/example-font-aw.png?v=2.1.3" height="72"> |
+| **ax** | <img src="./example/images/example-font-ax.png?v=2.1.3" height="72"> |
+| **ay** | <img src="./example/images/example-font-ay.png?v=2.1.3" height="72"> |
+| **bz** | <img src="./example/images/example-font-bz.png?v=2.1.3" height="72"> |
+| **ba** | <img src="./example/images/example-font-ba.png?v=2.1.3" height="72"> |
+| **bb** | <img src="./example/images/example-font-bb.png?v=2.1.3" height="72"> |
+| **bc** | <img src="./example/images/example-font-bc.png?v=2.1.3" height="72"> |
+| **bd** | <img src="./example/images/example-font-bd.png?v=2.1.3" height="72"> |
+| **be** | <img src="./example/images/example-font-be.png?v=2.1.3" height="72"> |
+| **bf** | <img src="./example/images/example-font-bf.png?v=2.1.3" height="72"> |
+| **bg** | <img src="./example/images/example-font-bg.png?v=2.1.3" height="72"> |
+| **bh** | <img src="./example/images/example-font-bh.png?v=2.1.3" height="72"> |
+| **bi** | <img src="./example/images/example-font-bi.png?v=2.1.3" height="72"> |
+| **bj** | <img src="./example/images/example-font-bj.png?v=2.1.3" height="72"> |
+| **bk** | <img src="./example/images/example-font-bk.png?v=2.1.3" height="72"> |
+| **bl** | <img src="./example/images/example-font-bl.png?v=2.1.3" height="72"> |
+| **bm** | <img src="./example/images/example-font-bm.png?v=2.1.3" height="72"> |
+| **bn** | <img src="./example/images/example-font-bn.png?v=2.1.3" height="72"> |
+| **bo** | <img src="./example/images/example-font-bo.png?v=2.1.3" height="72"> |
+| **bp** | <img src="./example/images/example-font-bp.png?v=2.1.3" height="72"> |
+| **bq** | <img src="./example/images/example-font-bq.png?v=2.1.3" height="72"> |
+| **br** | <img src="./example/images/example-font-br.png?v=2.1.3" height="72"> |
+| **bs** | <img src="./example/images/example-font-bs.png?v=2.1.3" height="72"> |
+| **bt** | <img src="./example/images/example-font-bt.png?v=2.1.3" height="72"> |
+| **bu** | <img src="./example/images/example-font-bu.png?v=2.1.3" height="72"> |
+| **bv** | <img src="./example/images/example-font-bv.png?v=2.1.3" height="72"> |
+| **bw** | <img src="./example/images/example-font-bw.png?v=2.1.3" height="72"> |
+| **bx** | <img src="./example/images/example-font-bx.png?v=2.1.3" height="72"> |
+| **by** | <img src="./example/images/example-font-by.png?v=2.1.3" height="72"> |
+| **cz** | <img src="./example/images/example-font-cz.png?v=2.1.3" height="72"> |
+| **ca** | <img src="./example/images/example-font-ca.png?v=2.1.3" height="72"> |
+| **cb** | <img src="./example/images/example-font-cb.png?v=2.1.3" height="72"> |
+| **cc** | <img src="./example/images/example-font-cc.png?v=2.1.3" height="72"> |
+| **cd** | <img src="./example/images/example-font-cd.png?v=2.1.3" height="72"> |
+| **ce** | <img src="./example/images/example-font-ce.png?v=2.1.3" height="72"> |
+| **cf** | <img src="./example/images/example-font-cf.png?v=2.1.3" height="72"> |
+| **cg** | <img src="./example/images/example-font-cg.png?v=2.1.3" height="72"> |
+| **ch** | <img src="./example/images/example-font-ch.png?v=2.1.3" height="72"> |
+| **ci** | <img src="./example/images/example-font-ci.png?v=2.1.3" height="72"> |
+| **cj** | <img src="./example/images/example-font-cj.png?v=2.1.3" height="72"> |
+| **ck** | <img src="./example/images/example-font-ck.png?v=2.1.3" height="72"> |
+| **cl** | <img src="./example/images/example-font-cl.png?v=2.1.3" height="72"> |
+| **cm** | <img src="./example/images/example-font-cm.png?v=2.1.3" height="72"> |
+| **cn** | <img src="./example/images/example-font-cn.png?v=2.1.3" height="72"> |
+| **co** | <img src="./example/images/example-font-co.png?v=2.1.3" height="72"> |
+| **cp** | <img src="./example/images/example-font-cp.png?v=2.1.3" height="72"> |
+| **cq** | <img src="./example/images/example-font-cq.png?v=2.1.3" height="72"> |
+| **cr** | <img src="./example/images/example-font-cr.png?v=2.1.3" height="72"> |
+| **cs** | <img src="./example/images/example-font-cs.png?v=2.1.3" height="72"> |
+| **ct** | <img src="./example/images/example-font-ct.png?v=2.1.3" height="72"> |
+| **cu** | <img src="./example/images/example-font-cu.png?v=2.1.3" height="72"> |
+| **cv** | <img src="./example/images/example-font-cv.png?v=2.1.3" height="72"> |
+| **cw** | <img src="./example/images/example-font-cw.png?v=2.1.3" height="72"> |
+| **cx** | <img src="./example/images/example-font-cx.png?v=2.1.3" height="72"> |
+| **cy** | <img src="./example/images/example-font-cy.png?v=2.1.3" height="72"> |
+| **dz** | <img src="./example/images/example-font-dz.png?v=2.1.3" height="72"> |
+| **da** | <img src="./example/images/example-font-da.png?v=2.1.3" height="72"> |
+| **db** | <img src="./example/images/example-font-db.png?v=2.1.3" height="72"> |
+| **dc** | <img src="./example/images/example-font-dc.png?v=2.1.3" height="72"> |
+| **dd** | <img src="./example/images/example-font-dd.png?v=2.1.3" height="72"> |
+| **de** | <img src="./example/images/example-font-de.png?v=2.1.3" height="72"> |
+| **df** | <img src="./example/images/example-font-df.png?v=2.1.3" height="72"> |
+| **dg** | <img src="./example/images/example-font-dg.png?v=2.1.3" height="72"> |
+| **dh** | <img src="./example/images/example-font-dh.png?v=2.1.3" height="72"> |
+| **di** | <img src="./example/images/example-font-di.png?v=2.1.3" height="72"> |
+| **dj** | <img src="./example/images/example-font-dj.png?v=2.1.3" height="72"> |
+| **dk** | <img src="./example/images/example-font-dk.png?v=2.1.3" height="72"> |
+
+
+<!-- Section from "doc/guides/03.Examples.md.hbs" End -->
+
 
 <!-- Sections Start -->
 

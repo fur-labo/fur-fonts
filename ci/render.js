@@ -12,7 +12,7 @@ const path = require('path')
 const mkdirp = require('mkdirp')
 const svgpng = require('svgpng')
 const writexml = require('writexml')
-const expandglob = require('expandglob')
+const aglob = require('aglob')
 const filecopy = require('filecopy')
 const os = require('os')
 const apeTasking = require('ape-tasking')
@@ -81,7 +81,7 @@ apeTasking.runTasks('render', [
     }
   }),
   () => co(function * () {
-    let filenames = yield expandglob('*.svg', { cwd: exampleImageDir })
+    let filenames = yield aglob('*.svg', { cwd: exampleImageDir })
     let config = filenames.map((filename) => {
       let name = path.basename(filename, '.svg')
       return {
