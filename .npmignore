@@ -33,4 +33,5 @@ bower_components
 tmp
 third_party
 ci
-docs
+doc
+example
